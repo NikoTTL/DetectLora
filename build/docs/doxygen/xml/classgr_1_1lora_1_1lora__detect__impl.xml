@@ -1,0 +1,537 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1lora_1_1lora__detect__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::lora::lora_detect_impl</compoundname>
+    <basecompoundref refid="classgr_1_1lora_1_1lora__detect" prot="public" virt="non-virtual">gr::lora::lora_detect</basecompoundref>
+    <includes refid="lora__detect__impl_8h" local="no">lora_detect_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1lora_1_1lora__detect__impl_1aea623131d3080616a5eea0297a556979" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacegr_1_1lora_1a12a2afbdd4291ae8a661a80558cee91e" kindref="member">demod_state_t</ref></type>
+        <definition>demod_state_t gr::lora::lora_detect_impl::d_state</definition>
+        <argsstring></argsstring>
+        <name>d_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" line="43" column="1" bodyfile="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1lora__detect__impl_1a13f71df03d5134383d3d7a03d343552e" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::lora_detect_impl::d_sf</definition>
+        <argsstring></argsstring>
+        <name>d_sf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" line="44" column="1" bodyfile="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1lora__detect__impl_1af4c3c68ca15ecf7cb8232cecf3b5a7ad" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::lora::lora_detect_impl::d_ldr</definition>
+        <argsstring></argsstring>
+        <name>d_ldr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" line="45" column="1" bodyfile="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1lora__detect__impl_1a25655298a5054160be23635d04467536" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::lora_detect_impl::d_num_symbols</definition>
+        <argsstring></argsstring>
+        <name>d_num_symbols</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" line="47" column="1" bodyfile="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1lora__detect__impl_1a75d88f44f5aa3348c3e7fa9cd42a4e35" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::lora_detect_impl::d_fft_size_factor</definition>
+        <argsstring></argsstring>
+        <name>d_fft_size_factor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" line="48" column="1" bodyfile="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1lora__detect__impl_1a81f037c4fa6503d68916aab2e15f9de5" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::lora_detect_impl::d_fft_size</definition>
+        <argsstring></argsstring>
+        <name>d_fft_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" line="49" column="1" bodyfile="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1lora__detect__impl_1aa098f45f79f7478259359eb5fac22bad" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::lora_detect_impl::d_overlaps</definition>
+        <argsstring></argsstring>
+        <name>d_overlaps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" line="50" column="1" bodyfile="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1lora__detect__impl_1ad5daa9a1ebfac1c1c7b5206e3f70e274" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::lora_detect_impl::d_offset</definition>
+        <argsstring></argsstring>
+        <name>d_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" line="51" column="1" bodyfile="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1lora__detect__impl_1a986281b377716a77c77ee29d4cf77f9d" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::lora::lora_detect_impl::d_power</definition>
+        <argsstring></argsstring>
+        <name>d_power</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" line="53" column="1" bodyfile="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1lora__detect__impl_1a5468bc2ddaee02143ecde63d17b14701" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::lora::lora_detect_impl::d_threshold</definition>
+        <argsstring></argsstring>
+        <name>d_threshold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" line="54" column="1" bodyfile="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1lora__detect__impl_1ad82e3b59574d7a7dea00a63a5e127608" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::lora::lora_detect_impl::d_squelched</definition>
+        <argsstring></argsstring>
+        <name>d_squelched</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" line="55" column="1" bodyfile="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1lora__detect__impl_1a782dc78dd4eb5ab280ffaa0b8e98f862" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::lora_detect_impl::d_preamble_idx</definition>
+        <argsstring></argsstring>
+        <name>d_preamble_idx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" line="57" column="1" bodyfile="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1lora__detect__impl_1aadc432708a6a5259ed4c0822266e4c38" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::lora_detect_impl::d_sfd_idx</definition>
+        <argsstring></argsstring>
+        <name>d_sfd_idx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" line="58" column="1" bodyfile="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1lora__detect__impl_1a0ed61911ddcd50a60e4f5179f3c611db" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; unsigned short &gt;</type>
+        <definition>std::vector&lt;unsigned short&gt; gr::lora::lora_detect_impl::d_argmax_history</definition>
+        <argsstring></argsstring>
+        <name>d_argmax_history</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" line="59" column="1" bodyfile="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1lora__detect__impl_1ab5e9784075a5a9d26b14f900ee329a8c" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; unsigned short &gt;</type>
+        <definition>std::vector&lt;unsigned short&gt; gr::lora::lora_detect_impl::d_sfd_history</definition>
+        <argsstring></argsstring>
+        <name>d_sfd_history</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" line="60" column="1" bodyfile="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1lora__detect__impl_1a4d71cec45abe6f8c573fda35fb841abf" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::lora_detect_impl::d_sync_recovery_counter</definition>
+        <argsstring></argsstring>
+        <name>d_sync_recovery_counter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" line="61" column="1" bodyfile="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1lora__detect__impl_1ab8d0df0a678e497ffdaab5e70e607369" prot="private" static="no" mutable="no">
+        <type>fft::fft_complex *</type>
+        <definition>fft::fft_complex* gr::lora::lora_detect_impl::d_fft</definition>
+        <argsstring></argsstring>
+        <name>d_fft</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" line="63" column="1" bodyfile="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1lora__detect__impl_1ad602a045a74a5ba1413870521ab35190" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; gr::lora::lora_detect_impl::d_window</definition>
+        <argsstring></argsstring>
+        <name>d_window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" line="64" column="1" bodyfile="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1lora__detect__impl_1aca651a45179011c3b64481899fc0ccc1" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::lora::lora_detect_impl::d_beta</definition>
+        <argsstring></argsstring>
+        <name>d_beta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" line="65" column="1" bodyfile="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1lora__detect__impl_1a2574f28b25827967a03c51bd7e507635" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; gr::lora::lora_detect_impl::d_upchirp</definition>
+        <argsstring></argsstring>
+        <name>d_upchirp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" line="67" column="1" bodyfile="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1lora__detect__impl_1ac78079421df4bf70f4a92bfd23ba1831" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; gr::lora::lora_detect_impl::d_downchirp</definition>
+        <argsstring></argsstring>
+        <name>d_downchirp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" line="68" column="1" bodyfile="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1lora__detect__impl_1ae5e9e081ba1fd9bc4b3ff27bed5683e9" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; unsigned short &gt;</type>
+        <definition>std::vector&lt;unsigned short&gt; gr::lora::lora_detect_impl::d_symbols</definition>
+        <argsstring></argsstring>
+        <name>d_symbols</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" line="70" column="1" bodyfile="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1lora__detect__impl_1a33baf47cc5586f97ff66d52bdc3a5d7e" prot="private" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream gr::lora::lora_detect_impl::f_raw</definition>
+        <argsstring></argsstring>
+        <name>f_raw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" line="72" column="1" bodyfile="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1lora__detect__impl_1a9ae53d7896cc6962d51ab074581d2e2d" prot="private" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream gr::lora::lora_detect_impl::f_up_windowless</definition>
+        <argsstring></argsstring>
+        <name>f_up_windowless</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" line="72" column="1" bodyfile="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1lora__detect__impl_1a032c862e802cdd13bc385a88b35d8718" prot="private" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream gr::lora::lora_detect_impl::f_up</definition>
+        <argsstring></argsstring>
+        <name>f_up</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" line="72" column="1" bodyfile="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1lora__detect__impl_1a3fa02bdde0aa83d7431c0a70a50e68ce" prot="private" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream gr::lora::lora_detect_impl::f_down</definition>
+        <argsstring></argsstring>
+        <name>f_down</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" line="72" column="1" bodyfile="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1lora_1_1lora__detect__impl_1ae4c485f20da3ae983c6ecb1fab45acb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::lora::lora_detect_impl::lora_detect_impl</definition>
+        <argsstring>(unsigned short spreading_factor, bool low_data_rate, float beta, unsigned short fft_factor)</argsstring>
+        <name>lora_detect_impl</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>spreading_factor</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>low_data_rate</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>beta</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>fft_factor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1lora__detect__impl_1a5cb8b43563290e091952cbf36cde8c56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::lora::lora_detect_impl::~lora_detect_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~lora_detect_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1lora__detect__impl_1a5b0a600505b66fec237cce584835f59c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::lora_detect_impl::argmax</definition>
+        <argsstring>(gr_complex *fft_result, bool update_squelch)</argsstring>
+        <name>argmax</name>
+        <param>
+          <type>gr_complex *</type>
+          <declname>fft_result</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>update_squelch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1lora__detect__impl_1a79e80c39475c7d0bc01cab67e6b4c5b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::lora_detect_impl::forecast</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
+        <name>forecast</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items_required</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1lora__detect__impl_1a7acaf740993f864ffde05c676274b965" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::lora::lora_detect_impl::general_work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>general_work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" line="85" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="40">
+        <label>block</label>
+      </node>
+      <node id="39">
+        <label>gr::lora::lora_detect</label>
+        <link refid="classgr_1_1lora_1_1lora__detect"/>
+        <childnode refid="40" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>gr::lora::lora_detect_impl</label>
+        <link refid="classgr_1_1lora_1_1lora__detect__impl"/>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="43">
+        <label>block</label>
+      </node>
+      <node id="42">
+        <label>gr::lora::lora_detect</label>
+        <link refid="classgr_1_1lora_1_1lora__detect"/>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>gr::lora::lora_detect_impl</label>
+        <link refid="classgr_1_1lora_1_1lora__detect__impl"/>
+        <childnode refid="42" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" line="40" column="1" bodyfile="/home/niko/Bastille/gr-lora/lib/lora_detect_impl.h" bodystart="39" bodyend="89"/>
+    <listofallmembers>
+      <member refid="classgr_1_1lora_1_1lora__detect__impl_1a5b0a600505b66fec237cce584835f59c" prot="public" virt="non-virtual"><scope>gr::lora::lora_detect_impl</scope><name>argmax</name></member>
+      <member refid="classgr_1_1lora_1_1lora__detect__impl_1a0ed61911ddcd50a60e4f5179f3c611db" prot="private" virt="non-virtual"><scope>gr::lora::lora_detect_impl</scope><name>d_argmax_history</name></member>
+      <member refid="classgr_1_1lora_1_1lora__detect__impl_1aca651a45179011c3b64481899fc0ccc1" prot="private" virt="non-virtual"><scope>gr::lora::lora_detect_impl</scope><name>d_beta</name></member>
+      <member refid="classgr_1_1lora_1_1lora__detect__impl_1ac78079421df4bf70f4a92bfd23ba1831" prot="private" virt="non-virtual"><scope>gr::lora::lora_detect_impl</scope><name>d_downchirp</name></member>
+      <member refid="classgr_1_1lora_1_1lora__detect__impl_1ab8d0df0a678e497ffdaab5e70e607369" prot="private" virt="non-virtual"><scope>gr::lora::lora_detect_impl</scope><name>d_fft</name></member>
+      <member refid="classgr_1_1lora_1_1lora__detect__impl_1a81f037c4fa6503d68916aab2e15f9de5" prot="private" virt="non-virtual"><scope>gr::lora::lora_detect_impl</scope><name>d_fft_size</name></member>
+      <member refid="classgr_1_1lora_1_1lora__detect__impl_1a75d88f44f5aa3348c3e7fa9cd42a4e35" prot="private" virt="non-virtual"><scope>gr::lora::lora_detect_impl</scope><name>d_fft_size_factor</name></member>
+      <member refid="classgr_1_1lora_1_1lora__detect__impl_1af4c3c68ca15ecf7cb8232cecf3b5a7ad" prot="private" virt="non-virtual"><scope>gr::lora::lora_detect_impl</scope><name>d_ldr</name></member>
+      <member refid="classgr_1_1lora_1_1lora__detect__impl_1a25655298a5054160be23635d04467536" prot="private" virt="non-virtual"><scope>gr::lora::lora_detect_impl</scope><name>d_num_symbols</name></member>
+      <member refid="classgr_1_1lora_1_1lora__detect__impl_1ad5daa9a1ebfac1c1c7b5206e3f70e274" prot="private" virt="non-virtual"><scope>gr::lora::lora_detect_impl</scope><name>d_offset</name></member>
+      <member refid="classgr_1_1lora_1_1lora__detect__impl_1aa098f45f79f7478259359eb5fac22bad" prot="private" virt="non-virtual"><scope>gr::lora::lora_detect_impl</scope><name>d_overlaps</name></member>
+      <member refid="classgr_1_1lora_1_1lora__detect__impl_1a986281b377716a77c77ee29d4cf77f9d" prot="private" virt="non-virtual"><scope>gr::lora::lora_detect_impl</scope><name>d_power</name></member>
+      <member refid="classgr_1_1lora_1_1lora__detect__impl_1a782dc78dd4eb5ab280ffaa0b8e98f862" prot="private" virt="non-virtual"><scope>gr::lora::lora_detect_impl</scope><name>d_preamble_idx</name></member>
+      <member refid="classgr_1_1lora_1_1lora__detect__impl_1a13f71df03d5134383d3d7a03d343552e" prot="private" virt="non-virtual"><scope>gr::lora::lora_detect_impl</scope><name>d_sf</name></member>
+      <member refid="classgr_1_1lora_1_1lora__detect__impl_1ab5e9784075a5a9d26b14f900ee329a8c" prot="private" virt="non-virtual"><scope>gr::lora::lora_detect_impl</scope><name>d_sfd_history</name></member>
+      <member refid="classgr_1_1lora_1_1lora__detect__impl_1aadc432708a6a5259ed4c0822266e4c38" prot="private" virt="non-virtual"><scope>gr::lora::lora_detect_impl</scope><name>d_sfd_idx</name></member>
+      <member refid="classgr_1_1lora_1_1lora__detect__impl_1ad82e3b59574d7a7dea00a63a5e127608" prot="private" virt="non-virtual"><scope>gr::lora::lora_detect_impl</scope><name>d_squelched</name></member>
+      <member refid="classgr_1_1lora_1_1lora__detect__impl_1aea623131d3080616a5eea0297a556979" prot="private" virt="non-virtual"><scope>gr::lora::lora_detect_impl</scope><name>d_state</name></member>
+      <member refid="classgr_1_1lora_1_1lora__detect__impl_1ae5e9e081ba1fd9bc4b3ff27bed5683e9" prot="private" virt="non-virtual"><scope>gr::lora::lora_detect_impl</scope><name>d_symbols</name></member>
+      <member refid="classgr_1_1lora_1_1lora__detect__impl_1a4d71cec45abe6f8c573fda35fb841abf" prot="private" virt="non-virtual"><scope>gr::lora::lora_detect_impl</scope><name>d_sync_recovery_counter</name></member>
+      <member refid="classgr_1_1lora_1_1lora__detect__impl_1a5468bc2ddaee02143ecde63d17b14701" prot="private" virt="non-virtual"><scope>gr::lora::lora_detect_impl</scope><name>d_threshold</name></member>
+      <member refid="classgr_1_1lora_1_1lora__detect__impl_1a2574f28b25827967a03c51bd7e507635" prot="private" virt="non-virtual"><scope>gr::lora::lora_detect_impl</scope><name>d_upchirp</name></member>
+      <member refid="classgr_1_1lora_1_1lora__detect__impl_1ad602a045a74a5ba1413870521ab35190" prot="private" virt="non-virtual"><scope>gr::lora::lora_detect_impl</scope><name>d_window</name></member>
+      <member refid="classgr_1_1lora_1_1lora__detect__impl_1a3fa02bdde0aa83d7431c0a70a50e68ce" prot="private" virt="non-virtual"><scope>gr::lora::lora_detect_impl</scope><name>f_down</name></member>
+      <member refid="classgr_1_1lora_1_1lora__detect__impl_1a33baf47cc5586f97ff66d52bdc3a5d7e" prot="private" virt="non-virtual"><scope>gr::lora::lora_detect_impl</scope><name>f_raw</name></member>
+      <member refid="classgr_1_1lora_1_1lora__detect__impl_1a032c862e802cdd13bc385a88b35d8718" prot="private" virt="non-virtual"><scope>gr::lora::lora_detect_impl</scope><name>f_up</name></member>
+      <member refid="classgr_1_1lora_1_1lora__detect__impl_1a9ae53d7896cc6962d51ab074581d2e2d" prot="private" virt="non-virtual"><scope>gr::lora::lora_detect_impl</scope><name>f_up_windowless</name></member>
+      <member refid="classgr_1_1lora_1_1lora__detect__impl_1a79e80c39475c7d0bc01cab67e6b4c5b3" prot="public" virt="non-virtual"><scope>gr::lora::lora_detect_impl</scope><name>forecast</name></member>
+      <member refid="classgr_1_1lora_1_1lora__detect__impl_1a7acaf740993f864ffde05c676274b965" prot="public" virt="non-virtual"><scope>gr::lora::lora_detect_impl</scope><name>general_work</name></member>
+      <member refid="classgr_1_1lora_1_1lora__detect__impl_1ae4c485f20da3ae983c6ecb1fab45acb7" prot="public" virt="non-virtual"><scope>gr::lora::lora_detect_impl</scope><name>lora_detect_impl</name></member>
+      <member refid="classgr_1_1lora_1_1lora__detect_1a53d691246a29aa7f8f67b83d8a851080" prot="public" virt="non-virtual"><scope>gr::lora::lora_detect_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1lora_1_1lora__detect_1ac8ad44dd9b8ef49d571871b0294a108f" prot="public" virt="non-virtual"><scope>gr::lora::lora_detect_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1lora_1_1lora__detect__impl_1a5cb8b43563290e091952cbf36cde8c56" prot="public" virt="non-virtual"><scope>gr::lora::lora_detect_impl</scope><name>~lora_detect_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

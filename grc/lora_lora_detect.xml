@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<block>
+  <name>LoRa Detect</name>
+  <key>lora_lora_detect</key>
+  <category>lora</category>
+  <import>import lora</import>
+  <make>lora.lora_detect($spreading_factor, $low_data_rate, $beta, $fft_factor)</make>
+  <!-- Make one 'param' node for every Parameter you want settable from the GUI.
+       Sub-nodes:
+       * name
+       * key (makes the value accessible as $keyname, e.g. in the make node)
+       * type -->
+ <param>
+    <name>Spreading Factor</name>
+    <key>spreading_factor</key>
+    <value>8</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Low Data Rate</name>
+    <key>low_data_rate</key>
+    <value>False</value>
+    <type>bool</type>
+  </param>
+  <param>
+    <name>FFT Window Beta</name>
+    <key>beta</key>
+    <value>25.0</value>
+    <type>float</type>
+  </param>
+  <param>
+    <name>FFT Size Factor</name>
+    <key>fft_factor</key>
+    <value>2</value>
+    <type>int</type>
+  </param>
+
+  <!-- Make one 'sink' node per input. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+  </sink>
+
+  <!-- Make one 'source' node per output. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+  <source>
+    <name>out</name>
+    <type>float</type>
+  </source>
+</block>

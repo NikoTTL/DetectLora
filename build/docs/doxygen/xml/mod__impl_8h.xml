@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="mod__impl_8h" kind="file" language="C++">
+    <compoundname>mod_impl.h</compoundname>
+    <includes local="no">vector</includes>
+    <includes local="no">complex</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">volk/volk.h</includes>
+    <includes refid="mod_8h" local="no">lora/mod.h</includes>
+    <incdepgraph>
+      <node id="113">
+        <label>volk/volk.h</label>
+      </node>
+      <node id="109">
+        <label>mod_impl.h</label>
+        <link refid="mod_impl.h"/>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+      </node>
+      <node id="116">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="112">
+        <label>fstream</label>
+      </node>
+      <node id="110">
+        <label>vector</label>
+      </node>
+      <node id="115">
+        <label>lora/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="117">
+        <label>gnuradio/block.h</label>
+      </node>
+      <node id="114">
+        <label>lora/mod.h</label>
+        <link refid="mod_8h"/>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+      </node>
+      <node id="111">
+        <label>complex</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classgr_1_1lora_1_1mod__impl" prot="public">gr::lora::mod_impl</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1lora">gr::lora</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="mod__impl_8h_1a09bbf28b0b9d5e53de2e5748b37755bf" prot="public" static="no">
+        <name>NUM_PREAMBLE_CHIRPS</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/niko/Bastille/gr-lora/lib/mod_impl.h" line="30" column="9" bodyfile="/home/niko/Bastille/gr-lora/lib/mod_impl.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mod__impl_8h_1abba490bda021a271069600460584eb7a" prot="public" static="no">
+        <name>LORA_SYNCWORD0</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/niko/Bastille/gr-lora/lib/mod_impl.h" line="31" column="9" bodyfile="/home/niko/Bastille/gr-lora/lib/mod_impl.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mod__impl_8h_1add2ac893c131ef46afdacec3c40212f3" prot="public" static="no">
+        <name>LORA_SYNCWORD1</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/niko/Bastille/gr-lora/lib/mod_impl.h" line="32" column="9" bodyfile="/home/niko/Bastille/gr-lora/lib/mod_impl.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/niko/Bastille/gr-lora/lib/mod_impl.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir">
+    <compoundname>lib</compoundname>
+    <innerfile refid="decode__impl_8h">decode_impl.h</innerfile>
+    <innerfile refid="demod__impl_8h">demod_impl.h</innerfile>
+    <innerfile refid="encode__impl_8h">encode_impl.h</innerfile>
+    <innerfile refid="lora__detect__impl_8h">lora_detect_impl.h</innerfile>
+    <innerfile refid="mod__impl_8h">mod_impl.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/niko/Bastille/gr-lora/lib/"/>
+  </compounddef>
+</doxygen>
